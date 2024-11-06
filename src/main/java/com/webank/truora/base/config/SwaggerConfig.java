@@ -38,7 +38,7 @@ public class SwaggerConfig {
     @Bean
     public Docket documentation() {
         return new Docket(DocumentationType.SWAGGER_2).select()
-                .apis(RequestHandlerSelectors.basePackage("com.webank.oracle")).build()
+                .apis(RequestHandlerSelectors.basePackage("com.webank.truora")).build()
                 .protocols(new HashSet<String>(Lists.newArrayList("http"))).pathMapping("/")
                 .apiInfo(apiInfo()).enable(true);
     }
